@@ -16,7 +16,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
 ]
-
+// 路由設定
 const router = createRouter({
   history: createWebHashHistory(),
   routes
