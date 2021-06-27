@@ -29,9 +29,12 @@ export default {
               this.checkSuccess = true
             } else {
               alert(response.data.message)
-              this.$router.push('/login')
+              this.$router.push('/Login')
             }
           })
+      } else {
+        alert('您尚未登入。')
+        this.$router.push('/Login')
       }
     },
     signout () {
